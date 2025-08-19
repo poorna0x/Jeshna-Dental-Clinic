@@ -44,7 +44,7 @@ const Navigation = () => {
             </Link> */}
 
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            {/* <Link to="/" className="flex items-center">
               <div className="w-15 h-14 rounded-full overflow-hidden mr-0">
                 <img 
                   src={logo} 
@@ -53,7 +53,20 @@ const Navigation = () => {
                 />
               </div>
               <span className="text-xl font-bold ml-[-15px]">Jeshna</span>
+            </Link> */}
+
+            <Link to="/" className="flex items-center gap-2">
+              <div className="w-[55px] h-[56px] ">
+                <img 
+                  src={logo} 
+                  alt="Jeshna Dental Logo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span className="text-xl font-bold">Jeshna</span>
             </Link>
+
+
 
 
             {/* Desktop Menu */}
