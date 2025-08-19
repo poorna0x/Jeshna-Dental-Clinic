@@ -1,4 +1,4 @@
-import { Users, Sparkles, Shield, Calendar } from 'lucide-react';
+import { Users, Sparkles, Calendar } from 'lucide-react';
 
 const Stats = () => {
   const stats = [
@@ -13,12 +13,6 @@ const Stats = () => {
       number: '2,500+',
       label: 'Teeth Whitened',
       description: 'Brighter smiles delivered'
-    },
-    {
-      icon: Shield,
-      number: '800+',
-      label: 'Dental Implants',
-      description: 'Successful procedures'
     },
     {
       icon: Calendar,
@@ -38,18 +32,18 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
-            
+
             return (
               <div key={index} className="text-center space-y-4 group">
                 <div className="flex justify-center">
-                  <div className="p-4 bg-accent/20 rounded-3xl group-hover:bg-accent/30 transition-colors">
-                    <IconComponent className="w-10 h-10 text-accent" />
+                  <div className="p-5 sm:p-6 bg-accent/20 rounded-3xl group-hover:bg-accent/30 transition-colors">
+                    <IconComponent className="w-12 h-12 sm:w-14 sm:h-14 text-accent" />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <h3 className="text-3xl lg:text-4xl font-bold text-primary-foreground">
                     {stat.number}
