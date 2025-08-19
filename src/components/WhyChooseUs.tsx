@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h3 className="heading-md text-primary">
-                Why Thousands Choose Dentia
+                Why Thousands Choose Jeshna
               </h3>
               <p className="body-lg text-muted-foreground">
                 We've built our reputation on delivering exceptional dental care that goes beyond expectations. 
