@@ -4,7 +4,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: 'Roopa',
-      role: 'Mother of Two',
+      role: 'House wife',
       rating: 5,
       text: 'Dentia has been incredible for our family. Dr. Prasanna is so gentle with my kids, and they actually look forward to their dental visits now! The staff is amazing and the office is beautiful.',
       icon: Heart
