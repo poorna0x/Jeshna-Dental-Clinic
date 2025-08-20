@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Clock, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/logo.webp';
+import logo from '@/assets/fulllogo.png';
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -44,18 +45,17 @@ const Navigation = () => {
             </Link> */}
 
             {/* Logo */}
-            {/* <Link to="/" className="flex items-center">
-              <div className="w-15 h-14 rounded-full overflow-hidden mr-0">
+            <Link to="/" className="flex items-center">
+             <div className="w-28 h-14 md:w-36 md:h-18">
                 <img 
                   src={logo} 
                   alt="Jeshna Dental Logo" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-xl font-bold ml-[-15px]">Jeshna</span>
-            </Link> */}
+          </Link>
 
-            <Link to="/" className="flex items-center gap-2">
+            {/* <Link to="/" className="flex items-center gap-2">
               <div className="w-[55px] h-[56px] ">
                 <img 
                   src={logo} 
@@ -64,7 +64,7 @@ const Navigation = () => {
                 />
               </div>
               <span className="text-xl font-bold">Jeshna</span>
-            </Link>
+            </Link> */}
 
 
 

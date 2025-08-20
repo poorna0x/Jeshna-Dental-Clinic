@@ -23,7 +23,36 @@ const FAQ = () => {
     },
     {
       question: 'How can I maintain good oral health at home?',
-      answer: 'Brush twice daily with fluoride toothpaste, floss daily, use an antimicrobial mouthwash, eat a balanced diet low in sugary snacks, and avoid tobacco products. Regular dental visits complement your home care routine for optimal oral health.'
+      answer: 'Yes, we do. If you are experiencing a dental emergency, such as severe pain, a knocked-out tooth, or a broken restoration, please call us immediately at [6363116263]. We will do our best to see you the same day.'
+    },
+    {
+      question: 'Do you use digital X-rays? Are they safe?',
+      answer: 'Yes, we use state-of-the-art digital X-ray technology. Digital X-rays use up to 90% less radiation than traditional film X-rays, making them extremely safe. They also allow us to view and diagnose conditions instantly on our monitors.'
+    },
+    {
+      question: 'What are my options for replacing a missing tooth?',
+      answer: '', // we will render JSX for this one
+      customRender: (
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <strong>Dental Implants:</strong> A permanent solution that replaces the root and crown. It looks, feels, and functions like a natural tooth.
+          </li>
+          <li>
+            <strong>Dental Bridges:</strong> A fixed prosthesis that "bridges" the gap by anchoring to the adjacent teeth.
+          </li>
+          <li>
+            <strong>Partial Dentures:</strong> A removable appliance that replaces one or more missing teeth. We will discuss all options with you to find the best solution for your needs.
+          </li>
+        </ul>
+      )
+    },
+    {
+      question: 'What is the difference between a silver (amalgam) filling and a white (composite) filling?',
+      answer: 'Silver amalgam fillings are durable and cost-effective. White composite fillings are made of a tooth-colored resin that bonds directly to the tooth, providing a natural look and allowing for a more conservative restoration. We primarily use composite fillings for their aesthetic and structural benefits.'
+    },
+    {
+      question: 'Do you use mercury in your fillings?',
+      answer: 'No. We are a mercury-free practice. We exclusively use modern, tooth-colored composite materials for all fillings. These materials are not only safer and more aesthetically pleasing but also better for the environment.'
     }
   ];
 
@@ -69,9 +98,13 @@ const FAQ = () => {
 
                 {isExpanded && (
                   <div className="pt-4 border-t border-border mt-4">
-                    <p className="body-md text-muted-foreground">
-                      {faq.answer}
-                    </p>
+                    {faq.customRender ? (
+                      faq.customRender
+                    ) : (
+                      <p className="body-md text-muted-foreground">
+                        {faq.answer}
+                      </p>
+                    )}
                   </div>
                 )}
               </div>

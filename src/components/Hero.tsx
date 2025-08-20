@@ -62,10 +62,24 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center text-white space-y-8">
           {/* Main Headline */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in">
+            {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in">
               Jeshna Dental Clinic <br />
               <span className="text-accent">Elevating Smiles</span> with Expert Care and a Gentle Touch
-            </h1>
+            </h1> */}
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in">
+  <span className="text-[rgba(0,152,137,1)]">Jeshna Dental Clinic</span> <br />
+  <span className="text-white text-[0.9375em] md:text-[0.9375em] lg:text-[0.9375em]">
+    Elevating Smiles with Expert Care and a Gentle Touch
+  </span>
+</h1>
+
+
+            {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in">
+  <span className="text-green-500 text-5xl md:text-6xl lg:text-7xl">Jeshna Dental Clinic</span> <br />
+  <span className="text-white">Elevating Smiles with Expert Care and a Gentle Touch</span>
+</h1> */}
+
 
             {/* Google Rating */}
             <div className="flex justify-center items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-2xl px-6 py-3 w-fit mx-auto animate-fade-in">
@@ -79,6 +93,14 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* <p className="mt-4 text-base md:text-lg lg:text-xl text-[#ffffff] font-semibold tracking-wide animate-caption-fade-bounce">
+          Happy Smile Happy Life!
+          </p> */}
+
+
+
+
+          
           {/* CTA Buttons */}
           <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
             <Link to="/appointment" className="w-52">
@@ -95,6 +117,7 @@ const Hero = () => {
               </Button>
             </a>
           </div>
+          <p className="mt-4 text-base md:text-lg lg:text-xl text-[#fffffffe] font-semibold tracking-wide animate-caption-fade-bounce">Happy Smile Happy Life!</p>
         </div>
       </div>
 
